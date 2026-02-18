@@ -1,0 +1,49 @@
+{
+  "name": "akshaya",
+  "version": "1.0.0",
+  "description": "Configurable loan management system for cooperative societies",
+  "type": "module",
+  "main": "desktop.js",
+  "scripts": {
+    "start": "pear run .",
+    "dev": "pear run --dev .",
+    "build": "pear build .",
+    "package": "pear package .",
+    "test": "echo \"No tests yet\" && exit 1"
+  },
+  "keywords": [
+    "loan-management",
+    "cooperative-society",
+    "thrift-credit",
+    "pear"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "hyperbee": "^2.8.0",
+    "hyperdrive": "^11.3.0",
+    "pear-bridge": "^1.2.5",
+    "pear-electron": "^1.7.27",
+    "pear-pipe": "^1.0.6"
+  },
+  "devDependencies": {
+    "pear": "latest"
+  },
+  "pear": {
+    "name": "akshaya",
+    "description": "White-label loan management system for cooperative societies",
+    "pre": "pear-electron/pre",
+    "gui": {
+      "main": "app.html",
+      "height": 900,
+      "width": 1400,
+      "minHeight": 700,
+      "minWidth": 1200,
+      "resizable": true,
+      "maximizable": true
+    },
+    "options": {
+      "single": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "functions": {
+    "api/*.js": {
+      "runtime": "@vercel/node"
+    },
+    "api/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/config",
+      "destination": "/api/config.js"
+    },
+    {
+      "source": "/api/members",
+      "destination": "/api/members.js"
+    },
+    {
+      "source": "/api/dashboard/stats", 
+      "destination": "/api/dashboard/stats.js"
+    }
+  ]
+}
